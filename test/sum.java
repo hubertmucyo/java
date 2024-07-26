@@ -12,6 +12,7 @@ public class sum {
         }
         
         System.out.println("The sum is: "+sum);
+        System.out.println("The average is: "+sum/5);
 
     }
 }
