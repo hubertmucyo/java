@@ -12,7 +12,7 @@ public class user_info {
         age=sc.nextInt();
         String address;
         System.out.println("Enter your address: ");
-        address=sc.nextLine();
+        address=sc.next();
         float salary;
         System.out.println("Enter your salary: ");
         salary=sc.nextFloat();
