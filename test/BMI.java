@@ -20,18 +20,18 @@ public class BMI{
     }
 
     private static void display(){
-        System.out.println("BMI VALUE IS");
+        System.out.println("BMI VALUE IS: "+calculator());
         if (calculator()<18.5){
-            System.out.println("Underweight");
+            System.out.println(" You are Underweight");
         }
         else if (calculator()>18.5 && calculator()<=24.9){
-            System.out.println("Normal");
+            System.out.println("You have Normal");
         }
         else if (calculator()>=25 && calculator()<=29.9){
-            System.out.println("Overweight");
+            System.out.println("you are Overweight");
         }
         else if (calculator()>30){
-            System.out.println("Obese");
+            System.out.println("you are Obese");
         }
         else{
             System.out.println("Invalid input!");
