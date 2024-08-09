@@ -1,5 +1,6 @@
 package lab2;
 import java.util.Scanner;
+import java.util.*;
 public class Date {
     static int day;
     static int month;
@@ -88,22 +89,28 @@ public class Date {
         }
     public static void main(String[] args){
         input();
+        int choice;
         Scanner let=new Scanner(System.in);
-        System.out.println("Enter the format of your choice: \n"+"1. Default\n"+"2. Format1\n"+"3. Format2");
-        int choice=let.nextInt();
-        if(choice==1){
-            print();
-        }
-        else if(choice==2){
-            printformat1();
-        }
-        else if(choice==3){
-            printformat2();
-        }
-        else{
-            System.out.println("Invalid input!");
-            System.out.println("ENter again!");
-        }
+        do{
+            System.out.println("Enter the format of your choice: \n"+"1. Default\n"+"2. Format1\n"+"3. Format2\n"+"4.Exit");
+            choice=let.nextInt();
+            if(choice==1){
+                print();
+            }
+            else if(choice==2){
+                printformat1();
+            }
+            else if(choice==3){
+                printformat2();
+            }
+            else if(choice==4){
+                System.exit(0);
+            }
+            else{
+                System.out.println("Invalid input!");
+                System.out.println("ENter again!");
+            }
+        }while(choice!=4);   
 
     }
 }
