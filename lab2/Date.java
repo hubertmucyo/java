@@ -4,6 +4,7 @@ public class Date {
     static int day;
     static int month;
     static int year;
+    static String nmonth;
 
     static void input(){
         Scanner enter=new Scanner(System.in);
@@ -21,44 +22,47 @@ public class Date {
         System.out.println("First format: "+day+"."+month+"."+year);
     }
 
+    /**
+     * 
+     */
     static void printformat2(){
-        String mois;
+        
             switch (month) {
                 case 1:
-                    mois="JAnuary";
+                    nmonth="JAnuary";
                     break;
                 case 2:
-                    mois="February";
+                    nmonth="February";
                     break;
                 case 3:
-                    mois="March";
+                    nmonth="March";
                     break;
                 case 4:
-                    mois="April";
+                    nmonth="April";
                     break;
                 case 5:
-                    mois="MAy";
+                    nmonth="MAy";
                     break;
                 case 6:
-                    mois="June";
+                    nmonth="June";
                     break;
                 case 7:
-                    mois="July";
+                    nmonth="July";
                     break;
                 case 8:
-                    mois="August";
+                    nmonth="August";
                     break;
                 case 9:
-                    mois="September";
+                    nmonth="September";
                     break;
                 case 10:
-                    mois="October";
+                    nmonth="October";
                     break;
                 case 11:
-                    mois="November";
+                    nmonth="November";
                     break;
                 case 12:
-                    mois="December";
+                    nmonth="December";
                     break;
                 default:
                     break;
@@ -79,7 +83,7 @@ public class Date {
                     break;
             }
         
-        System.out.println("The date is: "+day+Nday+" "+" "+mois+year);
+        System.out.println("The date is: "+day+Nday+" "+nmonth+" "+year);
         
         }
     public static void main(String[] args){
