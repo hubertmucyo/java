@@ -20,7 +20,10 @@ public class Date {
     }
 
     static void printformat1(){
-        System.out.println("First format: "+day+"."+month+"."+year);
+        String dating;
+        dating = String.format("First format: %02d.%02d.%d", day, month, year);
+
+        System.out.println(dating);
     }
 
     /**
