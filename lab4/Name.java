@@ -34,10 +34,14 @@ public class Name {
         return "The name is: "+firstname+" "+middlename+" "+lastname;
     }
 
+    String myName(){
+        return "The name with initials:"+firstname.charAt(0)+"."+middlename.charAt(0)+" "+lastname;
+    }
     public static void main(String[] args) {
         Name n=new Name();
         Name n1=new Name(n);
         System.out.println(n1.toString());
+        System.out.println(n1.myName());
     }
 
 }
